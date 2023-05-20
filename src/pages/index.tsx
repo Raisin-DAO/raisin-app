@@ -3,6 +3,7 @@ import { useContract, useContractRead } from 'wagmi';
 import abi from '../abi.json';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Footer from '../../components/Footer';
 
 const CONTRACT_ADDRESS = '0x5d0cB8c5C90A714B4Ce2891cf8CC20fc2A1bA04F';
 
@@ -65,18 +66,7 @@ export default function Home() {
 
       <hr className='mt-8 border border-slate-200' />
 
-      <div className='mt-8 flex gap-6'>
-        <Link
-          className='underline'
-          href='https://github.com/Dhaiwat10/create-web3-frontend'
-        >
-          Star this repo on GitHub ⭐️
-        </Link>
-
-        <Link className='underline' href='https://twitter/dhaiwat10'>
-          Follow me on Twitter 🐦
-        </Link>
-      </div>
+     <Footer />
     </main>
   );
 }
