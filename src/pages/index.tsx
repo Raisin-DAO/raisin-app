@@ -4,7 +4,7 @@ import abi from '../abi.json';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Footer from '../../components/Footer';
-
+import PageContent from '../../components/PageContent';
 const CONTRACT_ADDRESS = '0x5d0cB8c5C90A714B4Ce2891cf8CC20fc2A1bA04F';
 
 export default function Home() {
@@ -64,8 +64,8 @@ export default function Home() {
         </p>
       </div>
 
-      <hr className='mt-8 border border-slate-200' />
-
+      {/* <hr className='mt-8 border border-slate-200' /> */}
+      <PageContent />
      <Footer />
     </main>
   );
